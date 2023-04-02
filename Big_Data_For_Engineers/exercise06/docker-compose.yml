@@ -15,5 +15,5 @@ services:
       - NB_GID=$HOST_GID
     volumes:
       - ./:/home/jovyan/work
-    command: ["start.sh", "jupyter", "lab", "--NotebookApp.token=''"]
+    command: ["start.sh", "jupyter", "lab", "--NotebookApp.allow_origin='*'"]
 
